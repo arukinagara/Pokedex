@@ -37,7 +37,7 @@ struct OverlayView: View {
                     .stroke(Color(overlay.displayColor), lineWidth: 3)
                     .frame(width: convertedRect.width, height: convertedRect.height).position(x: convertedRect.midX, y: convertedRect.midY)
                 
-                let stringBgRect = CGRect(x: convertedRect.origin.x, y: convertedRect.origin.y - (2 * stringVerticalSpacing + nameStringSize.height), width: 2 * stringHorizontalSpacing + nameStringSize.width, height: 2 * stringVerticalSpacing + nameStringSize.height)
+                let stringBgRect = CGRect(x: convertedRect.origin.x - 1.5, y: convertedRect.origin.y - (2 * stringVerticalSpacing + nameStringSize.height), width: 2 * stringHorizontalSpacing + nameStringSize.width, height: 2 * stringVerticalSpacing + nameStringSize.height)
                 
                 Rectangle()
                     .fill(Color(overlay.displayColor))

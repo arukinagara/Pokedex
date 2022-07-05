@@ -10,6 +10,7 @@
 		D76D4F0627A0DFD20082CCFC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D4F0527A0DFD20082CCFC /* StringExtension.swift */; };
 		D76D4F0827A0F8C00082CCFC /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D4F0727A0F8C00082CCFC /* OverlayView.swift */; };
 		D76D4F0C27A36F7A0082CCFC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D4F0B27A36F7A0082CCFC /* DetailView.swift */; };
+		D7B48CC727B7D2550079FEC2 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B48CC627B7D2550079FEC2 /* Pokemon.swift */; };
 		D7B6178C279E76FC00E21EDD /* SwiftCameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B6178B279E76FC00E21EDD /* SwiftCameraApp.swift */; };
 		D7B6178E279E76FC00E21EDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B6178D279E76FC00E21EDD /* ContentView.swift */; };
 		D7B61790279E770000E21EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B6178F279E770000E21EDD /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		D76D4F0527A0DFD20082CCFC /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		D76D4F0727A0F8C00082CCFC /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		D76D4F0B27A36F7A0082CCFC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D7B48CC627B7D2550079FEC2 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		D7B61788279E76FC00E21EDD /* SwiftCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B6178B279E76FC00E21EDD /* SwiftCameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCameraApp.swift; sourceTree = "<group>"; };
 		D7B6178D279E76FC00E21EDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				D7B617A3279E7A8500E21EDD /* CameraPreview.swift */,
 				D76D4F0727A0F8C00082CCFC /* OverlayView.swift */,
 				D76D4F0B27A36F7A0082CCFC /* DetailView.swift */,
+				D7B48CC627B7D2550079FEC2 /* Pokemon.swift */,
 				D7B48CAB27AA76180079FEC2 /* CameraService */,
 				D7B48CAA27AA753D0079FEC2 /* ModelDataHandler */,
 				D7B617A5279EEE1000E21EDD /* Model */,
@@ -260,6 +263,7 @@
 				D7B6179C279E77B700E21EDD /* CameraService+Enums.swift in Sources */,
 				D7B6178C279E76FC00E21EDD /* SwiftCameraApp.swift in Sources */,
 				D7B6179A279E776200E21EDD /* CameraService.swift in Sources */,
+				D7B48CC727B7D2550079FEC2 /* Pokemon.swift in Sources */,
 				D7B617AD279EF2C300E21EDD /* CVPixelBufferExtension.swift in Sources */,
 				D7B617A2279E7A5900E21EDD /* PhotoCaptureProcessor.swift in Sources */,
 				D7B617A0279E7A2600E21EDD /* ImageResizer.swift in Sources */,
@@ -409,6 +413,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -442,6 +447,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

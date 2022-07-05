@@ -97,6 +97,9 @@ struct CameraView: View {
     @State var cgimage: CGImage?
     @State var uiimage: UIImage?
     
+    let synthesizer = AVSpeechSynthesizer()
+    let voice = AVSpeechSynthesisVoice.init(language: "ja-JP")
+    
     var captureButton: some View {
         Button(action: {
             if model.objectOverlays.count != 0 {
@@ -105,6 +108,19 @@ struct CameraView: View {
                 self.cgimage = self.cgimage?.cropping(to: model.objectOverlays.first!.rect)
                 self.uiimage = UIImage(cgImage: self.cgimage!)
                 self.className = model.objectOverlays.first!.className
+                
+                let pokemon = Pokemon(className: self.className)
+                
+                let name = AVSpeechUtterance.init(string: pokemon!.name)
+                let category = AVSpeechUtterance.init(string: pokemon!.category)
+                let caption = AVSpeechUtterance.init(string: pokemon!.caption)
+                name.voice = voice
+                category.voice = voice
+                caption.voice = voice
+                synthesizer.speak(name)
+                synthesizer.speak(category)
+                synthesizer.speak(caption)
+                
                 self.showingSheet.toggle()
             }
         }, label: {
@@ -131,8 +147,8 @@ struct CameraView: View {
     
     var capturedPhotoThumbnail: some View {
         Group {
-            if model.photo != nil {
-                Image(uiImage: model.photo.image!)
+            if self.uiimage != nil {
+                Image(uiImage: self.uiimage!)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 60, height: 60)
